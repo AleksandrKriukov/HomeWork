@@ -7,9 +7,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class RomanNumeralsTest {
-
+    private RomanNumerals rn;
     @Before
-    RomanNumerals rn = new RomanNumerals();
+    public void setup() {
+        rn = new RomanNumerals();
+    }
 
     @Test
     public void oneTwoThree() {
@@ -20,6 +22,6 @@ public class RomanNumeralsTest {
 
     @Test
     public void four() {
-
+        Assert.assertEquals("IV", rn.convertToRoman(4));
     }
 }
