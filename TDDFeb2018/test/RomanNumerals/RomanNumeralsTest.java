@@ -40,6 +40,39 @@ public class RomanNumeralsTest {
         Assert.assertEquals("IX", rn.convertToRoman(9));
     }
 
+    @Test
+    public void romanOneTwoThree() {
+        Assert.assertEquals(1, rn.convertToArabic("I"));
+        Assert.assertEquals(2, rn.convertToArabic("II"));
+        Assert.assertEquals(3, rn.convertToArabic("III"));
+    }
+
+    @Test
+    public void romanFour() {
+        Assert.assertEquals(4, rn.convertToArabic("IV"));
+    }
+
+    @Test
+    public void romanFiveSixSevenEight() {
+        Assert.assertEquals(5, rn.convertToArabic("V"));
+        Assert.assertEquals(6, rn.convertToArabic("VI"));
+        Assert.assertEquals(7, rn.convertToArabic("VII"));
+        Assert.assertEquals(8, rn.convertToArabic("VIII"));
+    }
+
+    @Test
+    public void romanNine() {
+        Assert.assertEquals(9, rn.convertToArabic("IX"));
+    }
+
+    @Test
+    public void romanTenElevenTwelveThirteen() {
+        Assert.assertEquals(10, rn.convertToArabic("X"));
+        Assert.assertEquals(11, rn.convertToArabic("XI"));
+        Assert.assertEquals(12, rn.convertToArabic("XII"));
+        Assert.assertEquals(13, rn.convertToArabic("XIII"));
+    }
+
     @After
     public void cleanup() {
         rn = null;
