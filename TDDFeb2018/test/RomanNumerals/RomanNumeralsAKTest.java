@@ -20,6 +20,8 @@ public class RomanNumeralsAKTest {
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
                 {1, "I"},
+                {2, "II"},
+                {3, "III"},
         });
     }
 
